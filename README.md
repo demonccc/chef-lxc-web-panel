@@ -52,7 +52,7 @@ Attributes
     <td><tt>['lwp']['dir']['conf']</tt></td>
     <td>String</td>
     <td>Path of the directory where are the configuration files</td>
-    <td><tt></tt></td>
+    <td><tt>/etc/lwp</tt></td>
   </tr>
   <tr>
     <td><tt>['lwp']['ssl']['enabled']</tt></td>
