@@ -110,7 +110,7 @@ Attributes
   </tr>
   <tr>
     <td><tt>['lwp']['conf']['global']['debug']</tt></td>
-    <td>boolean</td>
+    <td>Boolean</td>
     <td>Enable log debug</td>
     <td><tt>false</tt></td>
   </tr>
@@ -128,7 +128,7 @@ Attributes
   </tr>
   <tr>
     <td><tt>['lwp']['conf']['global']['buckets']</tt></td>
-    <td>boolean</td>
+    <td>Boolean</td>
     <td>Enable buckets feature</td>
     <td><tt>false</tt></td>
   </tr>
@@ -163,7 +163,7 @@ Attributes
     <td><tt>/var/lxc-backup</tt></td>
   </tr>
   <tr>
-    <td><tt>['lwp']['conf']['storage_repository']['nfs'] = "/mnt/lxc-backup"</tt></td>
+    <td><tt>['lwp']['conf']['storage_repository']['nfs']</tt></td>
     <td>String</td>
     <td>NFS storage repository path</td>
     <td><tt>/mnt/lxc-backup</tt></td>
@@ -254,7 +254,7 @@ Attributes
   </tr>
 </table>
 
-NOTE: The hash ['lwp']['conf'] is used to create the configuration file, so you can add new entries in order to add configuration parameters dynamically.
+*NOTE:* The hash ['lwp']['conf'] is used to create the configuration file, so you can add new entries in order to add configuration parameters dynamically.
 
 Recipes
 -------
