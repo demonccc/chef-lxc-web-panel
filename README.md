@@ -254,7 +254,7 @@ Attributes
   </tr>
 </table>
 
-*NOTE:* The hash ['lwp']['conf'] is used to create the configuration file, so you can add new entries in order to add configuration parameters dynamically.
+**NOTE:** The hash ['lwp']['conf'] is used to create the configuration file, so you can add new entries in order to add configuration parameters dynamically.
 
 Recipes
 -------
