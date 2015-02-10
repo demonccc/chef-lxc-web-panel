@@ -17,7 +17,7 @@ The following platforms have been tested with this cookbook, meaning that the re
 #### Cookbooks
 - `nginx` - Used to install Nginx if you need to configure HTTPS service layer.
 - `chef-vault` - This cookbook is used to install chef-vault and permit to the cookbook use vaults instead databags.
-- `apt` - It is used to configures some repositories in order to install the necesaries packages in the Ubuntu Presice distribution.
+- `apt` - It is used to configures some repositories in order to install the necesaries packages.
 
 Attributes
 ----------

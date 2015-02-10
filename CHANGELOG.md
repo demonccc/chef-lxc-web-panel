@@ -3,9 +3,17 @@ lxc-web-panel CHANGELOG
 
 This file is used to list changes made in each version of the lxc-web-panel cookbook.
 
+0.3.4
+-----
+- [Claudio Cesar Sanchez Tejeda] - Corrected some Foodcritic alerts in the ssl recipe
+
+0.3.3
+-----
+- [Claudio Cesar Sanchez Tejeda] - A lot of changes...
+
 0.1.0
 -----
-- [your_name] - Initial release of lxc-web-panel
+- [Claudio Cesar Sanchez Tejeda] - Initial release of lxc-web-panel
 
 - - -
 Check the [Markdown Syntax Guide](http://daringfireball.net/projects/markdown/syntax) for help with Markdown.

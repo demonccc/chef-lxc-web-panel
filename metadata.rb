@@ -4,11 +4,11 @@ maintainer_email 'demonccc@gmail.com'
 license          'All rights reserved'
 description      'Installs/Configures LXC Web Panel'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version          '0.3.3'
+version          '0.3.4'
 
-depends "chef-vault"
-depends "nginx"
 depends	"apt"
+recommends "nginx"
+suggests "chef-vault"
 
 %w{ ubuntu debian }.each do |os|
   supports os
