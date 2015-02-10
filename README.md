@@ -254,6 +254,14 @@ Attributes
   </tr>
 </table>
 
+Recipes
+-------
+#### lxc-web-panel::default
+This recipe installs and configures LXC Web Panel in the node.
+
+#### lxc-web-panel::ssl
+This recipe installs and configures Nginx in order to use LXC Web Panel with HTTPS service layer.
+
 Usage
 -----
 Just include `lxc-web-panel` in your node's `run_list`:
@@ -266,26 +274,40 @@ Just include `lxc-web-panel` in your node's `run_list`:
   ]
 }
 ```
-#### lxc-web-panel::default
-This cookbook installs and configures LXC Web Panel in the node.
-
-#### lxc-web-panel::ssl
-This cookbook installs and configures Nginx in order to use LXC Web Panel with HTTPS service layer.
-In order to use it, add this recipe to the node's `run_list`:
-
+Set the attributes in order to configure LXC Web Panel, for example:
 ```json
-{
-  "name":"my_node",
-  "run_list": [
-    "recipe[nginx]",
-    "recipe[lxc-web-panel]",
-    "recipe[lxc-web-panel::ssl]"
-  ]
+"lwp": {
+  "package": {
+    "version": "0.7-18-g2747d90",
+    "options": "--force-yes"
+  },
+  "ssl": {
+    "enabled": true
+  },
+  "conf": {
+    "global": {
+      "auth": "ldap"
+    },
+    "ldap": {
+      "host": "ldap.example.com",
+      "port": 636,
+      "ssl": "true",
+      "base": "ou=people,dc=example,dc=com",
+      "bind_method": "anon",
+      "required_group": "lwp-users"
+    }
+  }
 }
 ```
+
+Development
+-----------
+- Source hosted at [GitHub][repo]
+- Report issues/Questions/Feature requests on [GitHub Issues][issues]
+
 Contributing
 ------------
-1. Fork the repository on Github
+1. Fork the repository on [Github][repo]
 3. Write your change
 4. Write tests for your change (if applicable)
 5. Run the tests, ensuring they all pass
@@ -293,4 +315,21 @@ Contributing
 
 License and Authors
 -------------------
-Authors: Claudio César Sánchez Tejeda
+Author:: Claudio Cesar Sanchez Tejeda <demonccc@gmail.com>
+
+Copyright:: 2014, Claudio Cesar Sanchez Tejeda
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+[repo]: https://github.com/demonccc/chef-lxc-web-panel
+[issues]: https://github.com/demonccc/chef-lxc-web-panel/issues
