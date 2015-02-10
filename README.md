@@ -1,7 +1,7 @@
 lxc-web-panel Cookbook
 ======================
 
-This cookbook installs and configures LXC Web Panel application. It also installs and conigures Nginx in order to add HTTPS service layer to this application.
+This cookbook installs and configures [LXC Web Panel](http://claudyus.github.io/LXC-Web-Panel/) application. It also installs and conigures Nginx in order to add HTTPS service layer to this application.
 
 Requirements
 ------------
