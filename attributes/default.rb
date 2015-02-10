@@ -15,7 +15,7 @@ default['lwp']['cert']['databag']['name'] = "lwp"
 default['lwp']['cert']['databag']['item'] = "cert"
 default['lwp']['cert']['databag']['encrypted_file'] = "/etc/chef/encrypted_file"
 
-# Configuration attributes
+# Configuration attributes (the ['lwp']['conf'] hash is used to create the configuration file)
 default['lwp']['conf']['global']['address'] = "0.0.0.0"
 default['lwp']['conf']['global']['port'] = 5000
 default['lwp']['conf']['global']['debug'] = "false"
