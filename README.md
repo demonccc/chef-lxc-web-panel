@@ -258,6 +258,7 @@ NOTE: The hash ['lwp']['conf'] is used to create the configuration file, so you 
 
 Recipes
 -------
+
 #### lxc-web-panel::default
 This recipe installs and configures LXC Web Panel in the node.
 
@@ -266,6 +267,7 @@ This recipe installs and configures Nginx in order to use LXC Web Panel with HTT
 
 Usage
 -----
+
 Just include `lxc-web-panel` in your node's `run_list`:
 
 ```json
@@ -304,11 +306,13 @@ Set the attributes in order to configure LXC Web Panel, for example:
 
 Development
 -----------
+
 - Source hosted at [GitHub][repo]
 - Report issues/Questions/Feature requests on [GitHub Issues][issues]
 
 Contributing
 ------------
+
 1. Fork the repository on [Github][repo]
 3. Write your change
 4. Write tests for your change (if applicable)
@@ -317,6 +321,7 @@ Contributing
 
 License and Authors
 -------------------
+
 Author:: Claudio Cesar Sanchez Tejeda <demonccc@gmail.com>
 
 Copyright:: 2014, Claudio Cesar Sanchez Tejeda
